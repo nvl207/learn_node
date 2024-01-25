@@ -1,0 +1,50 @@
+[
+  {
+    "id": "20",
+    "name": "CPU",
+    "price": 200,
+    "discount": 5,
+    "stock": 10,
+    "description": "Các loại CPU máy tính"
+  },
+  {
+    "id": 3,
+    "name": "RAM",
+    "price": 150,
+    "discount": 5,
+    "stock": 20,
+    "description": "Các loại RAM máy tính"
+  },
+  {
+    "id": 10,
+    "name": "SSD",
+    "price": 250,
+    "discount": 15,
+    "stock": 10,
+    "description": "Các loại SSD máy tính"
+  },
+  {
+    "id": 20,
+    "name": "Chuột Gaming",
+    "price": 250,
+    "discount": 10,
+    "stock": 1100,
+    "description": "Chuột máy tính dành cho Game thủ"
+  },
+  {
+    "id": 100,
+    "name": "Hi Hi",
+    "price": 200,
+    "discount": 5,
+    "stock": 5,
+    "description": "Nguon may tinh"
+  },
+  {
+    "id": 100,
+    "name": "Hi Hi",
+    "price": 200,
+    "discount": 5,
+    "stock": 5,
+    "description": "Nguon may tinh"
+  }
+]

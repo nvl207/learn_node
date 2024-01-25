@@ -1,0 +1,9 @@
+[
+  { "id": 1, "name": "Iphone", "product": "Iphone 12" },
+
+  { "id": 2, "name": "Samsung", "product": "Samsung Utra" },
+
+  { "id": 3, "name": "Xiaomi", "product": "Xiaomi ABC" },
+
+  { "id": 4, "name": "Nokia", "product": "Nokia 123" }
+]
