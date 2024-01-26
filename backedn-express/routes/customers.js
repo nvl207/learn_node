@@ -3,6 +3,9 @@ var router = express.Router();
 var { write } = require("../helpers/fileHelper");
 var fs = require("fs");
 
+// import nanoid
+const nanoid = require('nanoid');
+
 const customers = require("../data/customers.json");
 const fileName = "./data/customers.json";
 
@@ -38,8 +41,11 @@ router.get("/test", function (req, res, next) {
 });
 
 // Post
+
 router.post("/", function (req, res, next) {
   const data = req.body; // biến data lấy dữ liệu gửi lên từ body thông qua yêu cầu POST
+
+  data.id = nanoid();
   console.log("data = ", data); // req.body chứa dữ liệu được gửi lên từ client
 
   customers.push(data); // thêm dữ liệu vào mảng tên là customers

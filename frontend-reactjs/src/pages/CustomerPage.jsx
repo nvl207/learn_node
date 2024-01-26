@@ -1,3 +1,4 @@
+//test
 import axios from "axios";
 import React from "react";
 import { Button, Form, Input } from "antd";
@@ -11,12 +12,23 @@ export default function CustomerPage() {
 
   const onFinish = (values) => {
     console.log("success: ", values);
+
+    axios.post("http://localhost:9000/customers", values).then((response) => {
+      if (response.status === 201) {
+        alert("OK");
+        createForm.resetFields();
+      }
+
+      console.log(response.data);
+    });
   };
 
+
+  const [createForm] = Form.useForm();
   return (
     <div>
       {/* Form */}
-      <Form
+      <Form form={createForm}
         name="create-customer"
         labelCol={{
           span: 8,
